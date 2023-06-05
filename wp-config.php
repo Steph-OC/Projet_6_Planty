@@ -87,7 +87,12 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+/* on passe à true pour activer le mode debug */
+define( 'WP_DEBUG', true );
+/* créer un fichier d'erreur dans wp-content/debug.log */
+define('WP_DEBUG_LOG',true);
+/*  pour que les messages d'erreur ne s'affichent plus à l'écran mais dans debug.log */
+define('WP_DEBUG_DISPLAY', false);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
