@@ -1,0 +1,177 @@
+/*!
+Theme Name: Planty
+Theme URI: https://underscores.me/
+Author: Automattic
+Author URI: https://automattic.com/
+Description: Hi. I'm a starter theme called <code>Planty</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: Planty
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Planty is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* import font syne */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+
+* {
+	font-family: 'Syne', sans-serif;
+}
+
+:root {
+	--main-color: #D2776A;
+	--main-second-color: #3B8E46;
+	--main-bg-color: #ece2da;
+
+}
+
+/*  color: var(--main-color); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+	font-family: 'Syne', sans-serif;
+}
+
+/* On applique un gris plus clair sur les paragraphes */
+p {
+	color: #0000;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	background-color: var(--main-bg-color);
+}
+
+/***** Header *****/
+#masthead {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 80px;
+	width: 1440px;
+	background-color: #fff;
+}
+
+.custom-logo {
+	height: 18.87px;
+	width: 191.61px;
+	top: 0.02px;
+	margin-top: 31.02px;
+	margin-bottom: 30.12px;
+	margin-left: 37px;
+}
+
+/***** Nav *****/
+#site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 2;
+	width: 403px;
+	justify-content: end;
+	margin-right: 60px;
+}
+
+.menu-navigation-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.main-navigation ul {
+	display: flex;
+	align-items: center;
+}
+
+.main-navigation a {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19.2px;
+	color: #000000;
+}
+
+.main-navigation a:hover {
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 15.6px;
+	color: #000000;
+}
+
+.command-button {
+	width: 236px;
+	height: 80px;
+	background-color: #D2776A;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.command-button:hover {
+	background-color: #C02E44;
+	cursor: pointer;
+}
+
+#primary-menu {
+	display: flex;
+	gap: 60px;
+}
