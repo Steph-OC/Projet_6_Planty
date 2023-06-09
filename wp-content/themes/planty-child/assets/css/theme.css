@@ -102,6 +102,10 @@ body {
 	background-color: var(--main-bg-color);
 }
 
+.site {
+	width: 100%;
+}
+
 /***** Header *****/
 #masthead {
 	display: flex;
@@ -109,7 +113,7 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	height: 80px;
-	width: 1440px;
+	width: 100%;
 	background-color: #fff;
 }
 
