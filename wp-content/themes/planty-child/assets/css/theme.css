@@ -99,12 +99,15 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	width: 100%;
-	background-color: var(--main-bg-color);
+	background-color: #FFFFFF;
 }
 
 .site {
-	width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 1440px;
 }
+
 
 /***** Header *****/
 #masthead {
@@ -178,6 +181,37 @@ body {
 	display: flex;
 	gap: 60px;
 }
+
+/***** Banner *****/
+.pl-banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--main-bg-color);
+	border-radius: 0px 0px 47% 39% / 0px 0px 37px 40px;
+	height: auto;
+	border-bottom: 10px solid #e3d9d0;
+}
+
+h1 {
+	justify-content: center;
+	color: var(--main-second-color);
+	font-weight: 800;
+	font-size: 38px;
+	line-height: 45.6px;
+	text-align: center;
+	width: 781px;
+	height: 92px;
+	margin-top: 105px
+	
+}
+.img-banner{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
 
 /***** Footer ******/
 .site-footer {
