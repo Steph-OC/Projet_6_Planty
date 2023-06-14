@@ -77,7 +77,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--main-color: #D2776A;
 	--main-second-color: #3B8E46;
 	--main-bg-color: #ece2da;
-
 }
 
 /*  color: var(--main-color); */
@@ -91,7 +90,11 @@ body * {
 
 /* On applique un gris plus clair sur les paragraphes */
 p {
-	color: #0000;
+	color: #000000;
+}
+
+.site {
+	width: 1440px;
 }
 
 body {
@@ -102,22 +105,19 @@ body {
 	background-color: #FFFFFF;
 }
 
-.site {
-	display: flex;
-	flex-direction: column;
-	width: 1440px;
-}
-
-
 /***** Header *****/
 #masthead {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	height: 80px;
+	height: auto;
 	width: 100%;
 	background-color: #fff;
+}
+
+.site-branding {
+	height: 80px;
 }
 
 .custom-logo {
@@ -134,15 +134,18 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 2;
-	width: 403px;
+	width: 50%;
 	justify-content: end;
-	margin-right: 60px;
+	margin-right: 5%;
+
 }
 
 .menu-navigation-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	margin-right: 2%;
+
 }
 
 .main-navigation ul {
@@ -164,9 +167,9 @@ body {
 }
 
 .command-button {
-	width: 236px;
 	height: 80px;
-	background-color: #D2776A;
+	width: 236px;
+	background-color: #DC9F96;
 	color: #fff;
 	font-weight: 700;
 	font-size: 16px;
@@ -195,23 +198,168 @@ body {
 }
 
 h1 {
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	color: var(--main-second-color);
 	font-weight: 800;
 	font-size: 38px;
-	line-height: 45.6px;
 	text-align: center;
-	width: 781px;
-	height: 92px;
+	width: 60%;
 	margin-top: 105px
-	
-}
-.img-banner{
-display: flex;
-flex-direction: row;
-justify-content: center;
 }
 
+.img-banner {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/***** Presentation *****/
+.pl-presentation {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 82px;
+}
+
+.pl-presentation h2 {
+	color: var(--main-second-color);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	text-align: center;
+}
+
+.pl-presentation p {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	width: 34%;
+	text-align: center;
+}
+
+/***** Flavour *****/
+.pl-flavour {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--main-bg-color);
+	border-radius: 0px 0px 35% 41% / 0px 0px 18px 18px;
+	height: auto;
+}
+
+.pl-flavour h3 {
+	font-size: 30px;
+	font-weight: 800;
+	line-height: 36px;
+	text-align: center;
+	color: var(--main-color);
+	margin-top: 58px;
+	margin-bottom: 0;
+}
+
+.pl-flavour p {
+	margin-bottom: 49px;
+	width: 68%;
+	text-align: center;
+}
+
+.pl-img-flavour {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 65%;
+	gap: 40px 30px;
+}
+
+.img-flavour {
+	width: 393px;
+	height: 262px;
+}
+
+.button-page {
+	width: 198px;
+	height: 55px;
+	background-color: #E0B9B4;
+	color: #fff;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 37px;
+	border-radius: 5px;
+	margin-top: 56px;
+	margin-bottom: 40px;
+}
+
+.button-page:hover {
+	background-color: #C02E44;
+	cursor: pointer;
+}
+
+/***** Opinion *****/
+.pl-opinion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pl-opinion h3 {
+	font-size: 30px;
+	font-weight: 800;
+	line-height: 36px;
+	text-align: center;
+	margin-top: 133px;
+	margin-bottom: 84px;
+	color: var(--main-second-color);
+}
+
+.pl-img-opinion {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 85%;
+	flex-wrap: wrap;
+}
+
+.pl-section-opinion {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 30px;
+}
+
+.text-opinion {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 19.2px;
+	display: flex;
+	flex-direction: column;
+	width: 195px;
+	align-items: flex-start;
+	margin-top: 19px;
+	margin-left: 20px;
+}
+
+.text-opinion h4 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	text-align: center;
+	margin: 0;
+	color: var(--main-second-color);
+}
+
+.img-opinion {
+	width: 136px;
+	height: 155px;
+}
+
+.pl-can {
+	margin-top: 132px;
+}
 
 /***** Footer ******/
 .site-footer {
@@ -255,4 +403,111 @@ justify-content: center;
 	align-items: center;
 	height: 60px;
 	list-style: none;
+}
+
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1033px) {
+	/***** Header *****/
+	#masthead {
+		display: flex;
+		flex-direction: row;
+		height: auto;
+		width: 100%;
+		background-color: #fff;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#site-navigaton {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+
+	.menu-navigation-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.command-button {
+		width: 198px;
+		height: 55px;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 37px;
+		margin-bottom: 40px;
+	}
+	/***** Presentation *****/
+	.pl-presentation p {
+		width: 68%;
+	}
+
+}
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+	/***** Header *****/
+	#masthead {
+		flex-direction: column;
+	}
+
+	.custom-logo {
+		margin-left: 0;
+	}
+
+	.site-branding {
+		margin-bottom: 10%;
+	}
+
+	#site-navigation {
+		justify-content: center;
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 5%;
+		height: 30px;
+	}
+
+	.menu-navigation-container {
+		margin-right: 0;
+		margin-bottom: 80px;
+	}
+
+	.main-navigation li {
+		border-bottom: 3px solid var(--main-color);
+		padding-bottom: 10px;
+	}
+	/***** Banner *****/
+	h1 {
+		font-size: 25px;
+		width: 100%;
+	}
+
+	.pl-banner {
+		border-radius: 0px 0px 27% 27% / 0px 0px 9px 8px;
+		border-bottom: 5px solid #e3d9d0;
+	}
+
+	/***** Presentation *****/
+	.pl-presentation {
+		width: 100%;
+		margin: 82px 0 82px 0;
+	}
+
+	/***** Flavour *****/
+	.img-flavour {
+		object-fit: cover;
+	}
+	
+	/***** Opinion *****/
+	.pl-opinion h3 {
+		font-size: 20px;
+	}
 }

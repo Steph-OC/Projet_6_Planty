@@ -35,7 +35,7 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'planty'); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'planty' ); ?></button>
 				<?php
 				wp_nav_menu(
 					array(
@@ -46,7 +46,8 @@
 				?>
 			</nav><!-- #site-navigation -->
 
-			<a class='' href="">
+			<a href="">
 				<button class='command-button'>Commander</button>
 			</a>
+
 		</header><!-- #masthead -->
