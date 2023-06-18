@@ -137,7 +137,6 @@ body {
 	width: 50%;
 	justify-content: end;
 	margin-right: 5%;
-
 }
 
 .menu-navigation-container {
@@ -195,9 +194,10 @@ body {
 	border-radius: 0px 0px 47% 39% / 0px 0px 37px 40px;
 	height: auto;
 	border-bottom: 10px solid #e3d9d0;
+	padding-top: 100px;
 }
 
-h1 {
+.pl-banner-title {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -252,7 +252,7 @@ h1 {
 	height: auto;
 }
 
-.pl-flavour h3 {
+.pl-flavour-title {
 	font-size: 30px;
 	font-weight: 800;
 	line-height: 36px;
@@ -262,7 +262,7 @@ h1 {
 	margin-bottom: 0;
 }
 
-.pl-flavour p {
+.pl-flavour-p {
 	margin-bottom: 49px;
 	width: 68%;
 	text-align: center;
@@ -307,7 +307,7 @@ h1 {
 	align-items: center;
 }
 
-.pl-opinion h3 {
+.pl-opinion-title {
 	font-size: 30px;
 	font-weight: 800;
 	line-height: 36px;
@@ -343,7 +343,7 @@ h1 {
 	margin-left: 20px;
 }
 
-.text-opinion h4 {
+.text-opinion-title {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 36px;
@@ -405,7 +405,47 @@ h1 {
 	list-style: none;
 }
 
+/************************************** NOUS RENCONTRER ***********************************/
+.pl-meet-title {
+	font-size: 38px;
+	font-weight: 800;
+	line-height: 45.6px;
+	text-align: center;
+	color: var(--main-color);
+}
+.pl-meet-p {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}
 
+/***** EQUIPE *****/
+.pl-team-title {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	text-align: center;
+	color: #000000;
+}
+.pl-name_member {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: center;
+}
+.pl-text-work {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}
+
+/***** CONTACT *****/
+.pl-background {
+	background-color: var(--main-bg-color);
+	
+}
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1033px) {
