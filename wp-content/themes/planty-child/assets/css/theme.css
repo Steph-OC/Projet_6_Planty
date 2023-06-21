@@ -173,6 +173,9 @@ body {
 	line-height: 15.6px;
 	color: #000000;
 }
+.nav-connect {
+	margin-top: 30px;
+}
 
 .command-button {
 	height: 80px;
@@ -526,6 +529,16 @@ input[type="submit"]:hover {
 	z-index: -1;
 }
 
+/************************************** Commander ***********************************/
+
+.pl-command-title {
+	color: #FFFFFF;
+	font-size: 38px;
+	font-weight: 800;
+	line-height: 45.6px;
+	text-align: center;
+}
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1270px) {
@@ -600,6 +613,9 @@ input[type="submit"]:hover {
 	.pl-presentation p {
 		width: 68%;
 	}
+
+	
+	
 
 }
 

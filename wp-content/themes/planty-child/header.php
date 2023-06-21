@@ -28,6 +28,7 @@
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'planty'); ?></a>
 
 		<header id="masthead" class="site-header">
+
 			<div class="site-branding">
 				<?php
 				the_custom_logo();
@@ -35,7 +36,7 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'planty' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'planty'); ?></button>
 				<?php
 				wp_nav_menu(
 					array(
@@ -43,10 +44,14 @@
 						'menu_id'        => 'primary-menu',
 					)
 				);
-				?>
+				// link connect admin
+				if (is_user_logged_in()) : ?>
+					<a class="nav-connect" href="<?php echo admin_url(); ?>">Admin</a>
+				<?php endif; ?>
+
 			</nav><!-- #site-navigation -->
 
-			<a href="">
+			<a href="http://planty.test/commander/">
 				<button class='command-button'>Commander</button>
 			</a>
 
