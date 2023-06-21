@@ -94,7 +94,8 @@ p {
 }
 
 .site {
-	width: 1440px;
+	max-width: 1440px;
+	width: 100%;
 }
 
 body {
@@ -165,6 +166,14 @@ body {
 	color: #000000;
 }
 
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link:hover,
+#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link:focus {
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 15.6px;
+	color: #000000;
+}
+
 .command-button {
 	height: 80px;
 	width: 236px;
@@ -222,7 +231,8 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	margin: 82px;
+	margin: 5%;
+	width: 60%;
 }
 
 .pl-presentation h2 {
@@ -413,6 +423,7 @@ body {
 	text-align: center;
 	color: var(--main-color);
 }
+
 .pl-meet-p {
 	font-size: 20px;
 	font-weight: 400;
@@ -428,12 +439,14 @@ body {
 	text-align: center;
 	color: #000000;
 }
+
 .pl-name_member {
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 24px;
 	text-align: center;
 }
+
 .pl-text-work {
 	font-size: 20px;
 	font-weight: 400;
@@ -442,13 +455,106 @@ body {
 }
 
 /***** CONTACT *****/
-.pl-background {
+.pl-contact {
 	background-color: var(--main-bg-color);
-	
 }
+
+.pl-contact-title {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 66px;
+}
+
+.wpcf7 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+label {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+
+input[type="text"],
+input[type="email"] {
+	width: 383px;
+	height: 71px;
+	margin-top: 13px;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+	border-radius: 7px;
+}
+
+textarea {
+	width: 383px;
+	margin-top: 13px;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+	border-radius: 7px;
+}
+
+input[type="submit"] {
+	width: 198px;
+	height: 55px;
+	background-color: #E0B9B4;
+	color: #fff;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 37px;
+	border-radius: 5px;
+	margin-left: 90px;
+}
+
+input[type="submit"]:hover {
+	background-color: #C02E44;
+	cursor: pointer;
+}
+
+#input_message {
+	position: relative;
+	z-index: 1;
+}
+
+#input_message img {
+	position: absolute;
+	bottom: -57px;
+	left: -88px;
+	z-index: -1;
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1270px) {
+
+	/*** text fraise ***/
+	body .uagb-block-b303a715.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 30px;
+	}
+
+	/*** text pamplemousse ***/
+	body .uagb-block-ad81bec0.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 30px;
+	}
+
+	/*** text framboise ***/
+	body .uagb-block-a7f770f8.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 30px;
+	}
+
+	/*** text citron ***/
+	body .uagb-block-bb0b12ed.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 30px;
+	}
+}
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1033px) {
+
 	/***** Header *****/
 	#masthead {
 		display: flex;
@@ -484,6 +590,12 @@ body {
 		line-height: 37px;
 		margin-bottom: 40px;
 	}
+
+	/***** Banner *****/
+	.pl-banner-title {
+		width: 88%;
+	}
+
 	/***** Presentation *****/
 	.pl-presentation p {
 		width: 68%;
@@ -494,6 +606,7 @@ body {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
 	/***** Header *****/
 	#masthead {
 		flex-direction: column;
@@ -501,6 +614,8 @@ body {
 
 	.custom-logo {
 		margin-left: 0;
+		height: 32px;
+		width: 245px;
 	}
 
 	.site-branding {
@@ -511,7 +626,7 @@ body {
 		justify-content: center;
 		margin-right: 0;
 		width: 100%;
-		margin-bottom: 5%;
+		margin-bottom: 8%;
 		height: 30px;
 	}
 
@@ -520,12 +635,8 @@ body {
 		margin-bottom: 80px;
 	}
 
-	.main-navigation li {
-		border-bottom: 3px solid var(--main-color);
-		padding-bottom: 10px;
-	}
 	/***** Banner *****/
-	h1 {
+	.pl-banner-title {
 		font-size: 25px;
 		width: 100%;
 	}
@@ -533,6 +644,7 @@ body {
 	.pl-banner {
 		border-radius: 0px 0px 27% 27% / 0px 0px 9px 8px;
 		border-bottom: 5px solid #e3d9d0;
+		padding-top: 0;
 	}
 
 	/***** Presentation *****/
@@ -545,9 +657,45 @@ body {
 	.img-flavour {
 		object-fit: cover;
 	}
-	
+
 	/***** Opinion *****/
 	.pl-opinion h3 {
 		font-size: 20px;
+	}
+
+	/***** Position image 1  *****/
+	body .wp-block-uagb-container.uagb-is-root-container .uagb-block-950069e6 {
+		max-width: 46%;
+		width: 100%;
+	}
+
+	/***** Position text 1  *****/
+	body .wp-block-uagb-container.uagb-is-root-container .uagb-block-4ae2eec9 {
+		max-width: 49%;
+		width: 100%;
+	}
+
+	/***** Position image 2  *****/
+	body .wp-block-uagb-container.uagb-is-root-container .uagb-block-5feb4b44 {
+		max-width: 45%;
+		width: 100%;
+	}
+
+	/***** Position text 2  *****/
+	body .wp-block-uagb-container.uagb-is-root-container .uagb-block-b97b73a6 {
+		max-width: 50%;
+		width: 100%;
+	}
+
+	/***** Position image 3  *****/
+	body .wp-block-uagb-container.uagb-is-root-container .uagb-block-d065df57 {
+		max-width: 44%;
+		width: 100%;
+	}
+
+	/***** Position text 3  *****/
+	body .wp-block-uagb-container.uagb-is-root-container .uagb-block-76833728 {
+		max-width: 51%;
+		width: 100%;
 	}
 }
