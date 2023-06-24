@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Accueil
+ * Template Name: Nous rencontrer
  */
 ?>
 <main id="primary" class="site-main">

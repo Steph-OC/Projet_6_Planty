@@ -43,12 +43,14 @@
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',
 					)
+					
 				);
+
 				// link connect admin
 				if (is_user_logged_in()) : ?>
 					<a class="nav-connect" href="<?php echo admin_url(); ?>">Admin</a>
 				<?php endif; ?>
-
+			
 			</nav><!-- #site-navigation -->
 
 			<a href="http://planty.test/commander/">

@@ -81,19 +81,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /*  color: var(--main-color); */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
 	font-family: 'Syne', sans-serif;
 }
 
-/* On applique un gris plus clair sur les paragraphes */
 p {
 	color: #000000;
 }
 
-.site {
+.site-main {
 	max-width: 1440px;
 	width: 100%;
 }
@@ -145,7 +141,6 @@ body {
 	flex-direction: row;
 	justify-content: flex-end;
 	margin-right: 2%;
-
 }
 
 .main-navigation ul {
@@ -173,6 +168,7 @@ body {
 	line-height: 15.6px;
 	color: #000000;
 }
+
 .nav-connect {
 	margin-top: 30px;
 }
@@ -195,6 +191,52 @@ body {
 	display: flex;
 	gap: 60px;
 }
+
+/***** Footer ******/
+.site-footer {
+	display: flex;
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	justify-content: center;
+}
+
+.site-info {
+	display: flex;
+	flex-direction: row;
+	height: 60px;
+}
+
+.site-info a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	color: #000000;
+}
+
+.site-info a:hover {
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 15.6px;
+	color: #000000;
+}
+
+.menu-menu-pied-de-page-container {
+	display: flex;
+	flex-direction: row;
+	height: 60px;
+}
+
+#menu_footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 60px;
+	list-style: none;
+}
+
+/************************************* HOME *******************************/
 
 /***** Banner *****/
 .pl-banner {
@@ -374,73 +416,135 @@ body {
 	margin-top: 132px;
 }
 
-/***** Footer ******/
-.site-footer {
-	display: flex;
-	width: 100%;
-	height: 60px;
-	background-color: #fff;
-	justify-content: center;
-}
-
-.site-info {
-	display: flex;
-	flex-direction: row;
-	height: 60px;
-}
-
-.site-info a {
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 19.2px;
-	color: #000000;
-}
-
-.site-info a:hover {
-	font-weight: 700;
-	font-size: 13px;
-	line-height: 15.6px;
-	color: #000000;
-}
-
-.menu-menu-pied-de-page-container {
-	display: flex;
-	flex-direction: row;
-	height: 60px;
-}
-
-#menu_footer {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 60px;
-	list-style: none;
-}
-
 /************************************** NOUS RENCONTRER ***********************************/
+
+/*** meet banner section  ***/
+.pl-meet-banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--main-bg-color);
+	border-radius: 0px 0px 47% 39% / 0px 0px 37px 40px;
+	height: auto;
+	border-bottom: 10px solid #e3d9d0;
+	padding-top: 100px;
+}
+
+/* flower ban  */
+.uag-image-550 {
+	width: 22%;
+	position: relative;
+	bottom: 10px;
+	right: -27%;
+}
+
+.pl-meet-presentation {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-bottom: 60px;
+}
+
 .pl-meet-title {
+	position: absolute;
 	font-size: 38px;
 	font-weight: 800;
 	line-height: 45.6px;
 	text-align: center;
 	color: var(--main-color);
+	text-align: center;
+	margin-top: 60px;
 }
 
-.pl-meet-p {
+.wp-block-uagb-container.uagb-is-root-container .uagb-block-67f99343 {
+	max-width: 76%;
+	width: 100%;
+	margin-top: 186px;
+
+}
+
+/* title center */
+.wp-block-uagb-container.uagb-is-root-container .uagb-block-da092a72 {
+	max-width: 70%;
+	width: 100%;
+}
+
+.pl-meet-text {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 24px;
 	text-align: center;
+	width: 97%;
 }
 
-/***** EQUIPE *****/
+/* text center */
+.wp-block-uagb-container.uagb-is-root-container .uagb-block-6a4f1867 {
+	max-width: 72%;
+	width: 100%;
+}
+
+/***** TEAM *****/
 .pl-team-title {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 36px;
 	text-align: center;
 	color: #000000;
+}
+
+/*** meet team section  ***/
+.pl-meet-team {
+	display: flex;
+	flex-direction: column;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.meet-team-title {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.meet-team-members {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10%;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.team-member {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 13%;
+}
+
+.team-name {
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.team-work {
+	font-size: 20px;
+	text-align: center;
+}
+
+.wp-image-552 {
+	width: 200px;
+	position: absolute;
+	top: 34%;
+	right: -15%;
+}
+
+/*** Nous contacter  ***/
+.pl-meet-contact {
+	background-color: var(--main-bg-color);
 }
 
 .pl-name_member {
@@ -457,6 +561,16 @@ body {
 	text-align: center;
 }
 
+.pl-team {
+	position: relative;
+}
+
+.pl-team-image {
+	position: absolute;
+	top: 10px;
+	left: 50px
+}
+
 /***** CONTACT *****/
 .pl-contact {
 	background-color: var(--main-bg-color);
@@ -468,6 +582,7 @@ body {
 	line-height: 24px;
 	text-align: center;
 	margin-top: 66px;
+	margin-bottom: 15px;
 }
 
 .wpcf7 {
@@ -486,7 +601,7 @@ label {
 
 input[type="text"],
 input[type="email"] {
-	width: 383px;
+	width: 100%;
 	height: 71px;
 	margin-top: 13px;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
@@ -494,14 +609,14 @@ input[type="email"] {
 }
 
 textarea {
-	width: 383px;
+	width: 100%;
 	margin-top: 13px;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
 	border-radius: 7px;
 }
 
 input[type="submit"] {
-	width: 198px;
+	width: 50%;
 	height: 55px;
 	background-color: #E0B9B4;
 	color: #fff;
@@ -517,6 +632,7 @@ input[type="submit"]:hover {
 	cursor: pointer;
 }
 
+/** leaft position **/
 #input_message {
 	position: relative;
 	z-index: 1;
@@ -529,7 +645,24 @@ input[type="submit"]:hover {
 	z-index: -1;
 }
 
-/************************************** Commander ***********************************/
+/** invalid message **/
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+	border-color: var(--main-second-color);
+	width: 350px;
+
+}
+
+/************************************** COMMANDER ***********************************/
+.command-page {
+	max-width: 100%;
+	width: 1440px;
+	display: flex;
+	flex-direction: column;
+	background-color: #3B8E46;
+	align-items: center;
+}
 
 .pl-command-title {
 	color: #FFFFFF;
@@ -537,6 +670,38 @@ input[type="submit"]:hover {
 	font-weight: 800;
 	line-height: 45.6px;
 	text-align: center;
+	margin-top: 69px;
+	margin-bottom: 69px;
+}
+
+.pl-command-separator {
+	background-color: #FFFFFF;
+	color: #FFFFFF;
+	height: 1px;
+	width: 868px;
+}
+
+.section-command-choice {
+	display: flex;
+	flex-direction: column;
+	max-width: 860px;
+	width: 100%;
+
+}
+
+.section-command-title {
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	text-align: left;
+	margin-bottom: 39px;
+}
+
+.command-flavour-choice {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 /****** Media queries ***********/
@@ -609,15 +774,26 @@ input[type="submit"]:hover {
 		width: 88%;
 	}
 
-	/***** Presentation *****/
 	.pl-presentation p {
 		width: 68%;
 	}
 
-	
-	
+	body .pl-meet-title {
+		position: absolute;
+		font-size: 30px;
+		font-weight: 800;
+		line-height: 45.6px;
+		text-align: center;
+		color: var(--main-color);
+	}
 
+	body .team-leaft {
+		width: 14%;
+		top: 148px;
+		right: 31px;
+	}
 }
+
 
 
 /* Small devices (phones, less than 768px) */
@@ -642,13 +818,30 @@ input[type="submit"]:hover {
 		justify-content: center;
 		margin-right: 0;
 		width: 100%;
-		margin-bottom: 8%;
+		margin-bottom: 20%;
 		height: 30px;
+		gap: 30px;
+	}
+
+	.main-navigation a {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19.2px;
+		color: var(--main-color);
+		margin: 10px;
 	}
 
 	.menu-navigation-container {
 		margin-right: 0;
 		margin-bottom: 80px;
+	}
+
+	#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link:hover,
+	#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link:focus {
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 50px;
+		color: #fff;
 	}
 
 	/***** Banner *****/
@@ -714,4 +907,43 @@ input[type="submit"]:hover {
 		max-width: 51%;
 		width: 100%;
 	}
+
+	/***********Nous rencontrer *********/
+	body .wp-block-uagb-container.uagb-block-69535877 {
+		justify-content: flex-start;
+	}
+
+	/* flower ban  */
+	.uag-image-550 {
+		width: 22%;
+		bottom: -10px;
+		right: -1%;
+	}
+
+
+	.pl-meet-title {
+		font-size: 20px;
+
+	}
+
+	body .team-leaft {
+		display: none;
+	}
+
+	#input_message img {
+		bottom: -36px;
+		left: -42px;
+		z-index: -1;
+		width: 33%;
+	}
+
+	body .pl-meet-title {
+		font-size: 25px;
+		font-weight: 800;
+		line-height: 45.6px;
+		text-align: center;
+		color: var(--main-color);
+	}
+
+
 }
