@@ -1,71 +1,3 @@
-/*!
-Theme Name: Planty
-Theme URI: https://underscores.me/
-Author: Automattic
-Author URI: https://automattic.com/
-Description: Hi. I'm a starter theme called <code>Planty</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-Version: 1.0.0
-Tested up to: 5.4
-Requires PHP: 5.6
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: Planty
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
-
-Planty is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/
-
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic
-	- Normalize
-	- Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-## Layouts
-# Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
-
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Generic
---------------------------------------------------------------*/
-
-/* Normalize
---------------------------------------------- */
-
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-	 ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
 /* import font syne */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
 
@@ -79,8 +11,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--main-bg-color: #ece2da;
 }
 
-/*  color: var(--main-color); */
-
 body * {
 	font-family: 'Syne', sans-serif;
 }
@@ -89,7 +19,7 @@ p {
 	color: #000000;
 }
 
-.site-main {
+#primary {
 	max-width: 1440px;
 	width: 100%;
 }
@@ -102,7 +32,7 @@ body {
 	background-color: #FFFFFF;
 }
 
-/***** Header *****/
+/*********************** Header **********************/
 #masthead {
 	display: flex;
 	flex-direction: row;
@@ -131,9 +61,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 2;
-	width: 50%;
+	width: 30%;
 	justify-content: end;
 	margin-right: 5%;
+	margin-left: 20%;
 }
 
 .menu-navigation-container {
@@ -192,7 +123,7 @@ body {
 	gap: 60px;
 }
 
-/***** Footer ******/
+/*********************** Footer ***********************/
 .site-footer {
 	display: flex;
 	width: 100%;
@@ -323,6 +254,14 @@ body {
 	text-align: center;
 }
 
+.flavour-img {
+	position: relative;
+}
+
+.title-img-flavour {
+	position: absolute;
+}
+
 .pl-img-flavour {
 	display: flex;
 	flex-direction: row;
@@ -332,12 +271,16 @@ body {
 	gap: 40px 30px;
 }
 
+body .wp-block-uagb-container.uagb-is-root-container .uagb-block-96dd9f7c {
+	width: 100%;
+}
+
 .img-flavour {
 	width: 393px;
 	height: 262px;
 }
 
-.button-page {
+.pl-button-page {
 	width: 198px;
 	height: 55px;
 	background-color: #E0B9B4;
@@ -346,11 +289,10 @@ body {
 	font-size: 15px;
 	line-height: 37px;
 	border-radius: 5px;
-	margin-top: 56px;
-	margin-bottom: 40px;
+	margin-bottom: 47px;
 }
 
-.button-page:hover {
+.pl-button-page:hover {
 	background-color: #C02E44;
 	cursor: pointer;
 }
@@ -461,7 +403,6 @@ body {
 	max-width: 76%;
 	width: 100%;
 	margin-top: 186px;
-
 }
 
 /* title center */
@@ -592,6 +533,13 @@ body {
 	justify-content: center;
 }
 
+/* formulaire contact */
+.wp-block-uagb-container.uagb-is-root-container .uagb-block-d53d0474 {
+	max-width: 383;
+	width: 100%;
+	margin-bottom: 150px;
+}
+
 label {
 	font-size: 20px;
 	font-weight: 400;
@@ -615,7 +563,7 @@ textarea {
 	border-radius: 7px;
 }
 
-input[type="submit"] {
+#button-contact {
 	width: 50%;
 	height: 55px;
 	background-color: #E0B9B4;
@@ -625,12 +573,14 @@ input[type="submit"] {
 	line-height: 37px;
 	border-radius: 5px;
 	margin-left: 90px;
+	margin-top: 24px;
 }
 
-input[type="submit"]:hover {
+#button-contact:hover {
 	background-color: #C02E44;
 	cursor: pointer;
 }
+
 
 /** leaft position **/
 #input_message {
@@ -651,8 +601,15 @@ input[type="submit"]:hover {
 .wpcf7 form.payment-required .wpcf7-response-output {
 	border-color: var(--main-second-color);
 	width: 350px;
-
 }
+
+/* image cannettes meet */
+.wp-image-1487 {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
 
 /************************************** COMMANDER ***********************************/
 .command-page {
@@ -671,14 +628,8 @@ input[type="submit"]:hover {
 	line-height: 45.6px;
 	text-align: center;
 	margin-top: 69px;
-	margin-bottom: 69px;
-}
-
-.pl-command-separator {
-	background-color: #FFFFFF;
-	color: #FFFFFF;
-	height: 1px;
-	width: 868px;
+	padding-bottom: 69px;
+	border-bottom: 1px solid #fff;
 }
 
 .section-command-choice {
@@ -686,7 +637,6 @@ input[type="submit"]:hover {
 	flex-direction: column;
 	max-width: 860px;
 	width: 100%;
-
 }
 
 .section-command-title {
@@ -698,36 +648,236 @@ input[type="submit"]:hover {
 	margin-bottom: 39px;
 }
 
-.command-flavour-choice {
+/* container principal images */
+.wp-block-uagb-container.uagb-is-root-container .uagb-block-4faddbee {
+	max-width: 860px;
+	width: 100%;
+	flex-direction: row;
+	justify-content: start;
+	padding: 0;
+}
+
+
+/* flavour images */
+.uagb-block-62fab86e.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+	font-family: "Syne";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 20px;
+	color: #fff;
+	margin-top: 4px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	opacity: 1;
+}
+
+.wp-element-caption {
+	display: none;
+}
+
+/*  delete marge*/
+.aligncenter {
+	margin-bottom: 0;
+}
+
+#form-command {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 860px;
+}
+
+/*width container imgs/form*/
+.wp-block-uagb-container.uagb-block-109b081a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 860px;
+}
+
+/* pl-imgs-flavour*/
+.wp-block-uagb-container.uagb-block-b084449a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0;
+	padding-right: 0;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+/***section compteur***/
+.pl-flavour-compteur {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 40px;
+	margin-bottom: 53px;
+	width: 100%;
 }
+
+.pl-compt-unit {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	width: 192px;
+}
+
+#compt-flavour {
+	width: 62px;
+	height: 56px;
+	color: #000000;
+	font-size: 16px;
+	font-family: Inter;
+	text-align: center;
+	border-radius: 7px;
+	margin-right: 11px;
+}
+
+/* button OK */
+#button-flavour {
+	width: 100px;
+	height: 56px;
+	border-radius: 0 5px 5px 0;
+	background-color: #E0B9B4;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: 400;
+	border-radius: 5px;
+}
+
+#button-flavour:hover {
+	background-color: #C02E44;
+	cursor: pointer;
+}
+
+.wpcf7-spinner {
+	display: none;
+}
+
+/* suppression marge entre bloc images et bloc compteurs */
+body .wp-block-uagb-container>.uagb-container-inner-blocks-wrap> :not(.wp-block-uagb-container):not(.wp-block-uagb-column):not(.wp-block-uagb-container):not(.wp-block-uagb-section):not(.uagb-container__shape):not(.uagb-container__video-wrap):not(.wp-block-spectra-pro-register):not(.wp-block-spectra-pro-login):not(.uagb-slider-container),
+body .wp-block-uagb-container>.uagb-container-inner-blocks-wrap,
+body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb-column):not(.wp-block-uagb-container):not(.wp-block-uagb-section):not(.uagb-container__shape):not(.uagb-container__video-wrap):not(.wp-block-uagb-image):not(.wp-block-spectra-pro-register):not(.wp-block-spectra-pro-login):not(.uagb-slider-container) {
+	min-width: unset !important;
+	width: 100%;
+	gap: 0;
+}
+
+/* section form infos*/
+.form-infos {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.title-form {
+	font-size: 30px;
+	font-weight: 700;
+	color: #FFFFFF;
+	margin-bottom: 29px;
+	margin-top: 0;
+}
+
+.text-label {
+	font-size: 20px;
+	color: #fff;
+}
+
+.form-name {
+	width: 383px;
+	height: 71px;
+	border-radius: 7px;
+	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+	margin-bottom: 30px;
+}
+
+.column-left {
+	padding: 0;
+	width: 383px;
+	align-content: flex-start;
+}
+
+.column-right {
+	border-left: 1px solid #fff;
+	padding-left: 44px;
+	margin-left: 44px;
+	width: 428px;
+}
+
+.section-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 44px;
+	margin-bottom: 93px;
+}
+
+#button-validate {
+	display: flex;
+	width: 198px;
+	height: 55px;
+	padding: 9px 57px 9px 56px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	background: #E0B9B4;
+	color: #FFFFFF;
+}
+
+#button-validate:hover {
+	background-color: #C02E44;
+	cursor: pointer;
+}
+
+/* error messages */
+.wpcf7-not-valid-tip {
+	color: #dc3232;
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
+	background-color: #ffffff4a;
+	font-weight: 600;
+	border-radius: 7px;
+}
+
+
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1270px) {
 
 	/*** text fraise ***/
-	body .uagb-block-b303a715.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
-		font-size: 30px;
+	.uagb-block-4779a70d.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 38px;
 	}
 
 	/*** text pamplemousse ***/
-	body .uagb-block-ad81bec0.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
-		font-size: 30px;
+	.uagb-block-d5d5c8f8.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 38px;
 	}
 
 	/*** text framboise ***/
-	body .uagb-block-a7f770f8.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
-		font-size: 30px;
+	.uagb-block-aec1ba95.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 38px;
 	}
 
 	/*** text citron ***/
-	body .uagb-block-bb0b12ed.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
-		font-size: 30px;
+	.uagb-block-6a942cde.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 38px;
 	}
 }
+
+
+
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -792,6 +942,27 @@ input[type="submit"]:hover {
 		top: 148px;
 		right: 31px;
 	}
+
+	/**** flavour images *****/
+	/*** text fraise ***/
+	.uagb-block-4779a70d.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 27px;
+	}
+
+	/*** text pamplemousse ***/
+	.uagb-block-d5d5c8f8.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 27px;
+	}
+
+	/*** text framboise ***/
+	.uagb-block-aec1ba95.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 27px;
+	}
+
+	/*** text citron ***/
+	.uagb-block-6a942cde.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+		font-size: 27px;
+	}
 }
 
 
@@ -817,8 +988,8 @@ input[type="submit"]:hover {
 	#site-navigation {
 		justify-content: center;
 		margin-right: 0;
-		width: 100%;
-		margin-bottom: 20%;
+		margin-left: 0;
+		margin-bottom: 25%;
 		height: 30px;
 		gap: 30px;
 	}
@@ -860,11 +1031,6 @@ input[type="submit"]:hover {
 	.pl-presentation {
 		width: 100%;
 		margin: 82px 0 82px 0;
-	}
-
-	/***** Flavour *****/
-	.img-flavour {
-		object-fit: cover;
 	}
 
 	/***** Opinion *****/
@@ -923,7 +1089,6 @@ input[type="submit"]:hover {
 
 	.pl-meet-title {
 		font-size: 20px;
-
 	}
 
 	body .team-leaft {
@@ -944,6 +1109,130 @@ input[type="submit"]:hover {
 		text-align: center;
 		color: var(--main-color);
 	}
+}
 
+/*  command page (phones, less than 876 px) */
+@media (max-width: 876px) {
 
+	.pl-command-title {
+		font-size: 25px;
+	}
+
+	.section-command-title {
+		font-size: 20px;
+		text-align: center;
+	}
+	/* pl-command-flavour*/
+	.wp-block-uagb-container.uagb-block-109b081a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100%;
+	}
+
+	/* container principal images */
+	.wp-block-uagb-container.uagb-is-root-container .uagb-block-4faddbee {
+		max-width: 860px;
+		width: 100%;
+		flex-direction: column;
+		justify-content: start;
+		padding: 0;
+	}
+
+	.uagb-block-d1c38891.wp-block-uagb-image .wp-block-uagb-image__figure img {
+		width: 192px;
+		height: 100%;
+
+	}
+
+	.uagb-block-e1573f6d.wp-block-uagb-image .wp-block-uagb-image__figure img {
+		width: 192px;
+		height: 100%;
+	}
+
+	.uagb-block-46fbe67f.wp-block-uagb-image .wp-block-uagb-image__figure img {
+		width: 192px;
+		height: 100%;
+	}
+
+	.uagb-block-8d3df7a6.wp-block-uagb-image .wp-block-uagb-image__figure img {
+		width: 192px;
+		height: 100%;
+	}
+
+	.wp-block-uagb-container.uagb-is-root-container .uagb-block-b084449a {
+		flex-direction: column;
+		position: absolute;
+		width: 100%;
+		max-width: 50%;
+		top: 3%;
+		right: 39%;
+		padding-bottom: 21%;
+	}
+	/* fraise*/
+	.uagb-block-d1c38891.wp-block-uagb-image{
+		text-align: center;
+		justify-content: center;
+		align-self: center;
+		margin-bottom: 24%;
+		margin-top: -4%;
+	}
+	/*pamplemousse*/
+	.uagb-block-e1573f6d.wp-block-uagb-image {
+		text-align: center;
+		justify-content: center;
+		align-self: center;
+		margin-bottom: 27%;
+	}
+	/*citron*/
+	.uagb-block-46fbe67f.wp-block-uagb-image {
+		text-align: center;
+		justify-content: center;
+		align-self: center;
+		margin-bottom: 27%;
+	}
+
+	.pl-compt-unit {
+		margin-bottom: 56px;
+		margin-top: 93px;
+	}
+
+	/* section compteur*/
+	.pl-flavour-compteur {
+		flex-direction: column;
+		position: relative;
+		left: 15%;
+		width: 22%;
+		margin-top: 0%;
+		bottom: 2%;
+		border: none;
+	}
+
+	/* form infos*/
+	.form-infos {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		width: 100%;
+	}
+
+	.column-left {
+		padding: 0;
+		width: 383px;
+		align-content: flex-start;
+		border-top: 1px solid #ffff;
+		padding-top: 39px;
+		margin-top: 60px;
+	}
+
+	.column-right {
+		border-left: none; 
+		padding-left: 0; 
+		margin-left: 0; 
+		width: 383px;
+		margin-top: 50px;
+		border-top: 1px solid #fff;
+		padding-top: 30px;
+	}
 }
