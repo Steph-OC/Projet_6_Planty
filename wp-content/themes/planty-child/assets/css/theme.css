@@ -1143,6 +1143,7 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 	.section-command-title {
 		font-size: 20px;
 		text-align: center;
+		margin-bottom: 69px;
 	}
 
 	/* pl-command-flavour*/
@@ -1182,40 +1183,31 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		width: 192px;
 		height: 100%;
 	}
-
+/**images block**/
 	.wp-block-uagb-container.uagb-is-root-container .uagb-block-b084449a {
 		flex-direction: column;
 		position: absolute;
 		width: 100%;
-		max-width: 50%;
+		max-width: 100%;
 		top: 3%;
-		right: 39%;
-		padding-bottom: 21%;
 	}
 
 	/* fraise*/
 	.uagb-block-d1c38891.wp-block-uagb-image {
 		text-align: center;
-		justify-content: center;
-		align-self: center;
-		margin-bottom: 24%;
-		margin-top: -4%;
+		margin-bottom: 59px;
+		margin-top: -115px;
 	}
 
 	/*pamplemousse*/
 	.uagb-block-e1573f6d.wp-block-uagb-image {
 		text-align: center;
-		justify-content: center;
-		align-self: center;
-		margin-bottom: 27%;
+		margin-bottom: 56px;
 	}
-
-	/*citron*/
+	/* framboise */
 	.uagb-block-46fbe67f.wp-block-uagb-image {
 		text-align: center;
-		justify-content: center;
-		align-self: center;
-		margin-bottom: 27%;
+		margin-bottom: 59px;
 	}
 
 	.pl-compt-unit {
@@ -1226,12 +1218,11 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 	/* section compteur*/
 	.pl-flavour-compteur {
 		flex-direction: column;
+		align-content: center;
 		position: relative;
-		left: 15%;
-		width: 22%;
 		margin-top: 0%;
-		bottom: 2%;
 		border: none;
+		margin-bottom: -60px;
 	}
 
 	/* form infos*/
