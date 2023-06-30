@@ -1,3 +1,31 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Base (line 30 to 63)
+	- Typography
+	- body
+	- color var
+# Components (line 63 to 197)
+	- Header
+		- Navigation
+		- Button "commander"
+	-Footer
+# 	-template-page & page Home (line 198 to 388)
+		- Banner
+		- Presantation
+		- Flavour
+		- Opinion
+	-template-page & page Nous rencontrer (line 389 to 640)
+		- Meet banner section
+		- Team presentation 
+		- Contact
+	-template-page & page Commander (line 641 to 878)
+		- section flavour choice
+		- section infos form
+# Media queries (line 880 to 1263)
+
+--------------------------------------------------------------*/
+
 /* import font syne */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
 
@@ -15,6 +43,14 @@ body * {
 	font-family: 'Syne', sans-serif;
 }
 
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
 p {
 	color: #000000;
 }
@@ -22,14 +58,6 @@ p {
 #primary {
 	max-width: 1440px;
 	width: 100%;
-}
-
-body {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	width: 100%;
-	background-color: #FFFFFF;
 }
 
 /*********************** Header **********************/
@@ -581,7 +609,6 @@ textarea {
 	cursor: pointer;
 }
 
-
 /** leaft position **/
 #input_message {
 	position: relative;
@@ -632,6 +659,7 @@ textarea {
 	border-bottom: 1px solid #fff;
 }
 
+/** section flavour choice **/
 .section-command-choice {
 	display: flex;
 	flex-direction: column;
@@ -656,7 +684,6 @@ textarea {
 	justify-content: start;
 	padding: 0;
 }
-
 
 /* flavour images */
 .uagb-block-62fab86e.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
@@ -850,7 +877,6 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 }
 
 
-
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1270px) {
@@ -876,10 +902,9 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 	}
 }
 
-
-
-
-/****** Media queries ***********/
+/*********************************/
+/****** Media queries ************/
+/*********************************/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1033px) {
 
@@ -964,8 +989,6 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		font-size: 27px;
 	}
 }
-
-
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -1086,7 +1109,6 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		right: -1%;
 	}
 
-
 	.pl-meet-title {
 		font-size: 20px;
 	}
@@ -1122,6 +1144,7 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		font-size: 20px;
 		text-align: center;
 	}
+
 	/* pl-command-flavour*/
 	.wp-block-uagb-container.uagb-block-109b081a {
 		padding-top: 10px;
@@ -1143,7 +1166,6 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 	.uagb-block-d1c38891.wp-block-uagb-image .wp-block-uagb-image__figure img {
 		width: 192px;
 		height: 100%;
-
 	}
 
 	.uagb-block-e1573f6d.wp-block-uagb-image .wp-block-uagb-image__figure img {
@@ -1170,14 +1192,16 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		right: 39%;
 		padding-bottom: 21%;
 	}
+
 	/* fraise*/
-	.uagb-block-d1c38891.wp-block-uagb-image{
+	.uagb-block-d1c38891.wp-block-uagb-image {
 		text-align: center;
 		justify-content: center;
 		align-self: center;
 		margin-bottom: 24%;
 		margin-top: -4%;
 	}
+
 	/*pamplemousse*/
 	.uagb-block-e1573f6d.wp-block-uagb-image {
 		text-align: center;
@@ -1185,6 +1209,7 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		align-self: center;
 		margin-bottom: 27%;
 	}
+
 	/*citron*/
 	.uagb-block-46fbe67f.wp-block-uagb-image {
 		text-align: center;
@@ -1227,9 +1252,9 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 	}
 
 	.column-right {
-		border-left: none; 
-		padding-left: 0; 
-		margin-left: 0; 
+		border-left: none;
+		padding-left: 0;
+		margin-left: 0;
 		width: 383px;
 		margin-top: 50px;
 		border-top: 1px solid #fff;
