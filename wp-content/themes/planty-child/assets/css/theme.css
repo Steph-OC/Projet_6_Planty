@@ -15,14 +15,15 @@
 		- Presantation
 		- Flavour
 		- Opinion
-	-template-page & page Nous rencontrer (line 389 to 640)
+	-template-page & page "Nous rencontrer" (line 389 to 640)
 		- Meet banner section
 		- Team presentation 
 		- Contact
-	-template-page & page Commander (line 641 to 878)
+	-template-page & page "Commander" (line 641 to 878)
 		- section flavour choice
 		- section infos form
-# Media queries (line 880 to 1263)
+	-template-page & page "Mentions légales"(line 879 to 888)
+# Media queries (line 889 to 1263)
 
 --------------------------------------------------------------*/
 
@@ -563,7 +564,7 @@ body .wp-block-uagb-container.uagb-is-root-container .uagb-block-96dd9f7c {
 
 /* formulaire contact */
 .wp-block-uagb-container.uagb-is-root-container .uagb-block-d53d0474 {
-	max-width: 383;
+	max-width: 383px;
 	width: 100%;
 	margin-bottom: 150px;
 }
@@ -874,6 +875,15 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 	background-color: #ffffff4a;
 	font-weight: 600;
 	border-radius: 7px;
+}
+
+/***********************Legal notices ********************/
+.pl-legal-title {
+	color: var(--main-color);
+	font-weight: 800;
+	font-size: 38px;
+	text-align: center;
+	margin-top: 105px
 }
 
 
