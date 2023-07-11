@@ -5,25 +5,25 @@
 	- Typography
 	- body
 	- color var
-# Components (line 63 to 139)
+# Components (line 63 to 146)
 	- Header
 		- Navigation
 		- Button "commander"
 	-Footer
-# 	-template-page & page Home (line 140 to 314)
+# 	-template-page & page Home (line 147 to 322)
 		- Banner
 		- Presantation
 		- Flavour
 		- Opinion
-	-template-page & page "Nous rencontrer" (line 315 to 528)
+	-template-page & page "Nous rencontrer" (line 323 to 536)
 		- Meet banner section
 		- Team presentation 
 		- Contact
-	-template-page & page "Commander" (line 529 to 819)
+	-template-page & page "Commander" (line 537 to 833)
 		- section flavour choice
 		- section infos form
-	-template-page & page "Mentions légales"(line 820 to 828)
-# Media queries (line 829 to 1143)
+	-template-page & page "Mentions légales"(line 834 to 842)
+# Media queries (line 843 to 1178)
 
 --------------------------------------------------------------*/
 
@@ -104,6 +104,13 @@ p {
 }
 
 .main-navigation a:hover {
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 15.6px;
+	color: #000000;
+}
+
+.main-navigation a:focus {
 	font-weight: 700;
 	font-size: 13px;
 	line-height: 15.6px;
@@ -228,6 +235,7 @@ p {
 	max-width: 393px;
 	width: 100%;
 	flex-wrap: wrap;
+	pointer-events: none;
 }
 
 #FlavourImage h4 {
@@ -331,8 +339,8 @@ p {
 .uag-image-550 {
 	width: 22%;
 	position: relative;
-	bottom: 10px;
-	right: -27%;
+	bottom: -22px;
+	right: -37%;
 }
 
 .pl-meet-presentation {
@@ -360,8 +368,8 @@ p {
 	text-align: center;
 	color: var(--main-color);
 	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 20px;
+	margin-top: 160px;
+	margin-bottom: 0px;
 }
 
 .pl-meet-text {
@@ -611,6 +619,7 @@ textarea {
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: flex-start;
+	pointer-events: none;
 }
 
 #ContFlavourImgs img {
@@ -722,6 +731,11 @@ input[type=number] {
 	font-size: 15px;
 	font-weight: 400;
 	border-radius: 5px;
+	cursor: pointer;
+}
+
+#button-ok:hover {
+	background-color: #C02E44;
 	cursor: pointer;
 }
 
@@ -971,7 +985,9 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		gap: 0;
 		font-size: 23px;
 	}
-
+	#textHome {
+		font-size: 17px;
+	}
 	/*text center*/
 	.wp-block-uagb-container.uagb-is-root-container .uagb-block-e61a486c {
 		max-width: 69%;
@@ -1009,6 +1025,11 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		justify-content: flex-start;
 	}
 
+	.uag-image-550 {
+		bottom: 26px;
+		right: 0%;
+	}
+
 	#MeetText {
 		width: 100%;
 		max-width: 82%;
@@ -1038,6 +1059,20 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		width: 33%;
 	}
 
+/** invalid message **/
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+	border-color: #FC4E00;
+	width: 230px;
+	margin-left: 42px;
+	font-size: 14px;
+}
+
+.wpcf7-not-valid-tip {
+		font-size: 0.7em;
+
+}
 	body .pl-meet-title {
 		font-size: 25px;
 		font-weight: 800;
