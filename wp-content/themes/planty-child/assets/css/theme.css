@@ -495,7 +495,7 @@ textarea {
 	font-size: 15px;
 	line-height: 37px;
 	border-radius: 5px;
-	margin-left: 90px;
+	margin-left: 26%;
 	margin-top: 24px;
 	margin-bottom: 50px;
 }
@@ -925,14 +925,6 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		margin-bottom: 69px;
 	}
 
-	#SectionOpinion {
-		flex-wrap: wrap;
-		max-width: 85%;
-		width: 100%;
-		column-gap: 202px;
-		row-gap: 35px;
-	}
-
 	#form-command {
 		width: 100%;
 		max-width: 383px;
@@ -1107,6 +1099,13 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 	/***** Opinion *****/
 	.pl-opinion h3 {
 		font-size: 20px;
+	}
+	#SectionOpinion {
+		flex-wrap: wrap;
+		max-width: 85%;
+		width: 100%;
+		column-gap: 202px;
+		row-gap: 35px;
 	}
 
 	/***********Nous rencontrer *********/
