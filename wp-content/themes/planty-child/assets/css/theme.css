@@ -23,7 +23,7 @@
 		- section flavour choice
 		- section infos form
 	-template-page & page "Mentions légales"(line 834 to 842)
-# Media queries (line 843 to 1178)
+# Media queries (line 843 to 1179)
 
 --------------------------------------------------------------*/
 
@@ -908,6 +908,94 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		top: 148px;
 		right: 31px;
 	}
+
+	/************Command*********/
+	#PlCommand {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.pl-command-title {
+		font-size: 25px;
+	}
+
+	.section-command-title {
+		font-size: 25px;
+		text-align: center;
+		margin-bottom: 69px;
+	}
+
+	#SectionOpinion {
+		flex-wrap: wrap;
+		max-width: 85%;
+		width: 100%;
+		column-gap: 202px;
+		row-gap: 35px;
+	}
+
+	#form-command {
+		width: 100%;
+		max-width: 383px;
+		align-content: center;
+	}
+
+	/* container principal images */
+	#ContFlavourImgs {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 0;
+		padding-right: 0;
+		flex-direction: column;
+		position: absolute;
+		top: -36px;
+		gap: 84px;
+	}
+
+	#ContFlavourImgs img {
+		width: 192px;
+		height: 100%;
+	}
+
+	/* section compteur*/
+	.pl-flavour-compteur {
+		flex-direction: column;
+		align-content: center;
+		position: relative;
+		border: none;
+		margin-bottom: -60px;
+		row-gap: 156px;
+		margin-top: 100px;
+	}
+
+	/* form infos*/
+	.form-infos {
+		align-content: center;
+		width: 100%;
+		max-width: 280px;
+	}
+
+	.title-form {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.column-left {
+		padding: 0;
+		max-width: 383px;
+		border-top: 1px solid #ffff;
+		padding-top: 39px;
+		margin-top: 60px;
+	}
+
+	.column-right {
+		border-left: none;
+		padding-left: 0;
+		margin-left: 0;
+		width: 383px;
+		margin-top: 50px;
+		border-top: 1px solid #fff;
+		padding-top: 30px;
+	}
 }
 
 /* Small devices (phones, less than 768px) */
@@ -1087,93 +1175,5 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		width: 100%;
 		position: absolute;
 		bottom: -10px;
-	}
-
-	/************Command*********/
-	#PlCommand {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.pl-command-title {
-		font-size: 25px;
-	}
-
-	.section-command-title {
-		font-size: 25px;
-		text-align: center;
-		margin-bottom: 69px;
-	}
-
-	#SectionOpinion {
-		flex-wrap: wrap;
-		max-width: 85%;
-		width: 100%;
-		column-gap: 202px;
-		row-gap: 35px;
-	}
-
-	#form-command {
-		width: 100%;
-		max-width: 383px;
-		align-content: center;
-	}
-
-	/* container principal images */
-	#ContFlavourImgs {
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 0;
-		padding-right: 0;
-		flex-direction: column;
-		position: absolute;
-		top: -36px;
-		gap: 84px;
-	}
-
-	#ContFlavourImgs img {
-		width: 192px;
-		height: 100%;
-	}
-
-	/* section compteur*/
-	.pl-flavour-compteur {
-		flex-direction: column;
-		align-content: center;
-		position: relative;
-		border: none;
-		margin-bottom: -60px;
-		row-gap: 156px;
-		margin-top: 100px;
-	}
-
-	/* form infos*/
-	.form-infos {
-		align-content: center;
-		width: 100%;
-		max-width: 280px;
-	}
-
-	.title-form {
-		font-size: 25px;
-		text-align: center;
-	}
-
-	.column-left {
-		padding: 0;
-		max-width: 383px;
-		border-top: 1px solid #ffff;
-		padding-top: 39px;
-		margin-top: 60px;
-	}
-
-	.column-right {
-		border-left: none;
-		padding-left: 0;
-		margin-left: 0;
-		width: 383px;
-		margin-top: 50px;
-		border-top: 1px solid #fff;
-		padding-top: 30px;
 	}
 }
