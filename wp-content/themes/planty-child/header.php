@@ -45,11 +45,7 @@
 					)
 				);
 
-				// link connect admin
-				if (is_user_logged_in()) : ?>
-					<a class="nav-connect" href="<?php echo admin_url(); ?>">Admin</a>
-
-				<?php endif; ?>
+				 ?>
 
 			</nav><!-- #site-navigation -->
 

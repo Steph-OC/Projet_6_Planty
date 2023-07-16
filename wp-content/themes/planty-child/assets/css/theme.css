@@ -92,7 +92,6 @@ p {
 	flex-grow: 2;
 	width: 30%;
 	justify-content: end;
-	margin-right: 5%;
 	margin-left: 20%;
 }
 
@@ -118,7 +117,18 @@ p {
 }
 
 .nav-connect {
-	margin-top: 30px;
+	margin-top: 0px;
+	margin-left: 60px;
+}
+
+body #mega-menu-wrap-menu-1 #mega-menu-menu-1 {
+	visibility: visible;
+	text-align: right;
+	/* padding: 31px 60px 30px 0px; */
+	display: flex;
+	flex-direction: row;
+	padding-top: 31px;
+	padding-right: 60px;
 }
 
 .command-button {
@@ -870,6 +880,10 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		justify-content: center;
 	}
 
+	.nav-connect {
+	columns: #fff;
+	}
+
 	.menu-toggle {
 		display: none;
 	}
@@ -1012,7 +1026,7 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		justify-content: center;
 		margin-right: 0;
 		margin-left: 0;
-		margin-bottom: 25%;
+		margin-bottom: 37%;
 		height: 30px;
 		gap: 30px;
 	}
@@ -1023,7 +1037,7 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 	}
 
 	/*link toggle*/
-	#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link:hover,
+	body#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link:hover,
 	#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link:focus {
 		font-weight: 700;
 		font-size: 13px;
@@ -1035,14 +1049,30 @@ body .wp-block-uagb-container> :not(.wp-block-uagb-container):not(.wp-block-uagb
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 19.2px;
-		color: var(--main-color);
+		color: #fff;
 		margin: 10px;
-		margin-top: 20px;
+		text-align: center;
+	}
+
+	body #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: 400;
+		color: #fff;
+		margin-top: 10px;
+	}
+
+	body #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link:hover {
+		text-decoration: none;
+		font-size: 13px;
+		font-weight: 400;
+		color: #fff;
+		margin-top: 10px;
 	}
 
 	.main-navigation a:hover {
 		font-size: 13px;
-		color: var(--main-color);
+		color:#fff;
 	}
 
 	/***** Banner *****/
